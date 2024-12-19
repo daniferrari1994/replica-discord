@@ -61,9 +61,11 @@ module.exports = {
     }),
     new CopyWebpackPlugin({
       patterns: [
-        { from: 'public/pdf', to: 'pdf' },
+        { from: 'public/favicon.ico', to: '' },
+        { from: 'public/manifest.json', to: '' },
       ],
     }),
+    
   ],
   mode: 'development'
 };
